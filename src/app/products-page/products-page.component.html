@@ -1,0 +1,19 @@
+<div id="product-page">
+  <h2>Products</h2>
+  <p *ngIf="error; else productList" class="error">There was a problem getting the product list.</p>
+  <ng-template #productList>
+    <ul #productList>
+      <li *ngFor="let product of products">
+        <a href="#">
+          <app-product-listing
+            id="{{product.id}}"
+            [name]="product.name"
+            [description]="product.description"
+            [imageUrl]="product.imageUrl"
+          >
+          </app-product-listing>
+        </a>
+      </li>
+    </ul>
+  </ng-template>
+</div>
