@@ -9,7 +9,9 @@ import { ProductsService } from '../data.service';
   styleUrls: ['./product-page.component.css'],
 })
 export class ProductPageComponent {
+
   product?: Product;
+
   error = false;
 
   constructor(

@@ -9,8 +9,11 @@ import { ProductsService } from "../data.service";
 })
 export class ProductsPageComponent implements OnInit {
   constructor(private productService: ProductsService) { }
+
   products: Product[] = []
+  
   error = false
+
   ngOnInit() {
     return this.productService.getProducts().subscribe(response => {
       this.products = response.products
