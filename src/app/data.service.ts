@@ -11,6 +11,7 @@ type ProductsResponse = {
 })
 export class ProductsService {
   url: string = '../assets/products.json';
+
   constructor(private httpClient: HttpClient) { }
 
   getProducts(): Observable<ProductsResponse> {
