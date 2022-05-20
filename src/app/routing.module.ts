@@ -12,7 +12,7 @@ const routing: Routes = [
   { path: 'products', component: ProductsPageComponent },
   { path: 'products/:id', component: ProductPageComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '/', component: HomePageComponent },
+
 ]
 
 @NgModule({
