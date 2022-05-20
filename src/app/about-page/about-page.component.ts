@@ -1,4 +1,5 @@
-import {Component} from "@angular/core";
+import { Component } from "@angular/core";
+import { RoutingModule } from "../routing.module";
 
 @Component({
   selector: "app-about-page",
