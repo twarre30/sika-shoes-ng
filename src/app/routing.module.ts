@@ -12,6 +12,7 @@ const routing: Routes = [
   { path: 'products', component: ProductsPageComponent },
   { path: 'products/:id', component: ProductPageComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '/', component: HomePageComponent },
 ]
 
 @NgModule({
@@ -21,9 +22,11 @@ const routing: Routes = [
       routing,
       { enableTracing: true }
     ),
-
     CommonModule,
+  ],
 
-  ]
+  exports: [
+    RouterModule
+  ],
 })
 export class RoutingModule { }
